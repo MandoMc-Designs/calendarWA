@@ -1,0 +1,135 @@
+/* CALENDARs */
+
+/* START DATE */
+.user-css .calendar-offset-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2em;
+    position: relative;
+        top: 0px;
+}
+
+/* MONTH NAV PILLS */
+
+.calendar-presentation .nav>li>a {
+    font-size: 15px;
+}
+
+.user-css-calendar .calendar-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-css-calendar .calendar-nav .nav-item {
+    background-color: #151119;
+    border: 1px solid #151119;
+    border-radius: 0px 20px 20px 0px;
+    margin: 2px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.user-css-calendar .calendar-nav .nav-item .active {
+    border-radius: 0px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.user-css-calendar .calendar-nav .nav-item a {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    white-space: nowrap;
+}
+
+.user-css-calendar .calendar-nav .nav-item a:focus {
+    background-color: #151119 !important;
+    border-radius: 0px 20px 20px 0px;
+    color: transparent;
+    font-weight: bold;
+}
+
+.user-css-calendar .calendar-nav .nav-item a:hover {
+    background-color: var(--HallowDarkBlue) !important;
+    border-radius: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* MOBILE MONTHS */
+@media only screen and (max-width: 600px) {
+    .user-css-calendar .calendar-nav li {
+        flex: 1 0 48%;
+        max-width: 48%;
+    }
+}
+
+/* DAYS */
+
+.user-css-calendar .calendar-day h3 {
+    margin-top: 0px !important;
+    position: relative;
+    top: 0;
+}
+
+.user-css-calendar .calendar-day .load-note {
+    display: contents;
+}
+
+@media only screen and (max-width: 600px) {
+    .user-css-calendar .calendar-day h3 {
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .user-css-calendar .calendar-day {  
+        height: 125px;
+        flex: 1 0 33%;
+        max-width: 33%;
+    }
+}
+
+/*Hover*/
+
+.user-css-calendar .calendar-day,
+.user-css-calendar .table,
+.user-css-calendar .calendar-day.blank-day,
+.user-css-calendar .table tr:nth-of-type(2n+1) {
+  background: transparent;
+}
+
+.user-css-calendar .table tr:hover {
+  background: var(--Standard-Dark);
+}
+.user-css-calendar .table {
+  border-collapse: inherit;
+}
+.user-css-calendar .calendar-day {
+  border: 1px gold solid;
+}
+
+.user-css-calendar .celestials {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.user-css-calendar .celestials {
+padding: 2px;
+}
+
+.user-css-calendar .celestial-object {
+width: 2em;
+height: 2em;
+margin: .5px;
+}
+
+.user-css-calendar .celestial-icon {
+top: 20%;
+font-size: 1.5em;
+}
+
+.user-css-calendar .celestial-phase {
+background: none;
+}
